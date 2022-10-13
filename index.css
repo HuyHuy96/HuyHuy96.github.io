@@ -146,9 +146,7 @@ body{
     margin-left: 75px;
     
 }
-.search-btn-icon{
-    
-}
+
 .search-select{
     border: none;
 }
@@ -517,17 +515,14 @@ div.sales-discount span{
     font-size: 20px;
 }
 .popular-categories{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 60px 0 60px;
+    margin: 20px 80px 0 80px;
     justify-content: space-around;
-    padding: 0 20px;
 }
 .popular-categories-top{
     display: flex;
     border:1px solid rgba(179, 179, 179, 0.671);
-    border-bottom: none;
     width: 100%;
     justify-content: space-between;
     min-height: 60px;
@@ -549,9 +544,9 @@ div.sales-discount span{
     color: #000;
 }
 .popular-categories-grid{
-    width: 100%;
     display: grid;
     grid-template-columns:auto auto auto auto auto auto auto;
+    
 }
 .grid-item {
     display: flex;
@@ -560,7 +555,7 @@ div.sales-discount span{
     height: 168px;
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(179, 179, 179, 0.671);
-    padding: 27px 40px;
+    padding: 27px 39px;
     font-size: 10px;
     text-align: center;
 }
@@ -581,17 +576,23 @@ h5{
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 20px 65px 0 80px;
-    border: 1px solid rgb(165, 163, 163);
-    padding: 15px 20px;
+    margin: 20px 0;
 }
 .main-trending-top{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    
+    border-bottom: 1px solid rgb(165, 163, 163);
+    padding: 20px 10px;
+    border: 1px solid #999;
+    margin: 0 80px;
 }
-  
+.main-trending-bottom{
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin: 0 80px;
+}
 .trending-top-right{
     display: flex;
 }
@@ -607,16 +608,30 @@ h5{
     padding-top: 10px;
     padding-left: 12px;
 }
-.main-trending-bottom{
-    display: flex;
-    justify-content: space-between;
+
+.ll-image1{
+    height: 200px;
 }
-.trending-bottom-container{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.slick-arrow{
+    position: absolute;
+    top: -55px;
+    background-color: white;
+    border: none;
+    z-index: 2;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
 }
+.slick-prev{
+    right: 90px;
+}
+.slick-next{
+    right: 30px;   
+}
+.slick-track .slick-slide{
+    width: 200px;
+} 
+
 .trending-bottom-container div a{
     text-decoration: none;
     color: #000;
@@ -625,61 +640,70 @@ h5{
 .trending-bottom-container div{
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 .trending-bottom-container span{
     text-align: center;
     padding-top: 10px;
 }
 .container-img{
-    background-image: url(https://minimog-4437.kxcdn.com/megastore/wp-content/uploads/sites/4/2022/03/megastore_box_01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 200px;
     margin-bottom: 10px;
 }
-
-.container-img1{
-    background-image: url(https://minimog-4437.kxcdn.com/megastore/wp-content/uploads/sites/4/2022/03/megastore_box_02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 200px;
-    margin-bottom: 10px;
+.container-img img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    object-fit: cover;
 }
-.container-img2{
-    background-image: url(https://minimog.thememove.com/megastore/wp-content/uploads/sites/4/2022/03/megastore_box_03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 200px;
-    margin-bottom: 10px;
+.slick-initialized .trending-bottom-container{
+    margin: 10px 10px;
 }
 
 .element-container{
     display: flex;
-    margin: 20px 80px 0 80px;
     width: 100%;
+    padding: 20px 0;
 }
 .element-container-background{
     width: 35%;
-    background-image: url("https://minimog.thememove.com/megastore/wp-content/uploads/sites/4/2022/03/megastore_banner_04.jpg");
+    margin-left: 80px;
+    position: relative;
+}
+.background{
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+}
+.container-background{
+    background-image: url("https://minimog-4437.kxcdn.com/megastore/wp-content/uploads/sites/4/2022/03/megastore_banner_04.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
     
 }
+.element-gird{
+    width: 60%;
+    margin-right: 80px;
+    
+    border-right: 1px solid #999;
+}
+
 .container-background-align{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-left: 20px;
+    height: 100%;
+}
+.text-align{
+    margin-top: 20px;
+    width: 60%;
 }
 .discount{
-    margin-top: 100px;
+    margin-bottom: 50px;
     font-size: 30px;
-    text-align: center;
 }
 .discount a{
     text-decoration: none;
@@ -693,23 +717,38 @@ h5{
    padding-bottom: 10px;
    font-size: 20px;
 }
-.element-gird{
-    display: grid;
-    grid-template-columns: 195px 195px 195px 195px ;
-    justify-content: space-between;   
-}
+
 .gird-price{
-    border-right: 1px solid #999;
-    border-top: 1px solid #999;
-    border-bottom:  1px solid #999;
-    font-size: 25px;
+    font-size: 20px; 
+    border: 1px solid #999;
+    border-right: none;
+    padding-top: 15px;
+    padding-left: 2px;
 }
-.gird-price:first-child{
-    border-left: 1px solid #999;
+.stick-active:last-child{
+    border-right: 1px soilid #999;
 }
+.slick-arrow1{
+    position: absolute;
+    top: 40%;
+    background-color: white;
+    border: none;
+    z-index: 2;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+}
+.slick-prev1{
+    left: 80px;
+}
+.slick-next1{
+    right: 80px;   
+}
+
 .gird-price-inf{
     padding-left: 10px;
     padding-bottom: 20px;
+    width: 80%;
 }
 .gird-price-inf span h5{
     color: #888;
@@ -741,7 +780,9 @@ h5{
 }
 .price-img-main{
     padding-top: 10px;
+    margin-bottom: 20px;
 }
+
 .price-img-hover{
     padding-top: 10px;
     position: absolute; 
@@ -789,12 +830,18 @@ h5{
     flex-wrap: wrap;
     margin: 20px 60px 0 60px;
     justify-content: space-around;
-    padding: 0 20px;
+    padding:0 20px;
+
 }
 .element-gird1{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    justify-content: space-between;   
+    justify-content: space-between; 
+    margin-bottom: 10px;
+}
+.gird-price1{
+    border: 1px solid rgb(196, 194, 194);
+    font-size: 20px;
 }
 .element-container-deal{
     display: flex;
@@ -930,6 +977,10 @@ li a{
 }
 .btn-check{
     display: none;
+}
+#your-email{
+    height: 40px;
+    width: 300px;
 }
 @media only screen and (max-width: 1150px){
     #top-bar{
